@@ -21,7 +21,8 @@ html {
       }
     
     .box {
-      max-width: 500px;
+      /* max-width: 500px; */
+      width:75%;
       margin: 50px auto;
       background: white;
       border-radius: 5px;
@@ -57,7 +58,7 @@ html {
     p {
       margin: 0;
       padding: 20px;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 200;
       color: #00204a;
     }
@@ -71,7 +72,7 @@ html {
       border-color: transparent;
       background-color: #149ae7;
       color: #fff;
-      /* font-size: 30px; */
+      font-size: 1rem;
       padding: 6px;
       border-width: 0;
     }
@@ -91,9 +92,9 @@ html {
       top: 10px;
       border: none;
       background: transparent;
-      font-size: 20px;
+      font-size: 1.5rem;
       font-weight: 200;
-      width: 313px;
+      width: 75%;
     }
     
     input[type="text"]:focus {
@@ -149,6 +150,8 @@ html {
   
   .navbar-brand{
       padding-left: 20px;    
+      font-size: 2.5rem;
+      font-weight: bold;
   }
   
   .navbar-toggler{
@@ -167,4 +170,9 @@ html {
   .nav-link {
     font-size: 1.2rem;
     font-family: "Montserrat-Light";
+  }
+
+  .container-fluid{
+      width: 100%;
+      padding: 3% 15% 7%;
   }
