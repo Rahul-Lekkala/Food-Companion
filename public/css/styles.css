@@ -1,0 +1,170 @@
+html {
+      background-color: #E4E9FD;
+      background-image: -webkit-linear-gradient(65deg, #149ae7 30%, #E4E9FD 70%);
+      min-height: 1000px;
+      font-family: 'helvetica neue';
+    }
+    
+    h1 {
+      color: #fff;
+      padding: 10px;
+    }
+
+    h2{
+      text-align: center;
+      color: #fff;
+      padding:20px;
+    }
+    
+    body{
+            background-color : transparent;
+      }
+    
+    .box {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+      padding: 0 20px 0 20px;
+    }
+    
+    #heading {
+      background-color: #149ae7;
+      text-align: center;
+    }
+    
+    .item {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #F1F1F1;
+    }
+    
+    .item:last-child {
+      border-bottom: 0;
+    }
+    
+    input:checked+p {
+      text-decoration: line-through;
+      text-decoration-color: #149ae7;
+    }
+    
+    .itemCheckbox {
+      margin: 20px;
+    }
+    
+    p {
+      margin: 0;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 200;
+      color: #00204a;
+    }
+    
+    form.item{
+      text-align: center;
+      margin-left: 20px;
+    }
+    
+    .btn {
+      border-color: transparent;
+      background-color: #149ae7;
+      color: #fff;
+      /* font-size: 30px; */
+      padding: 6px;
+      border-width: 0;
+    }
+
+    .randomButton{
+      text-align:center;
+    }
+
+    .selectButton{
+      background-color: #0b527a;
+      padding: 20px;
+    }
+    
+    input[type="text"] {
+      text-align: center;
+      height: 60px;
+      top: 10px;
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      font-weight: 200;
+      width: 313px;
+    }
+    
+    input[type="text"]:focus {
+      outline: none;
+      box-shadow: inset 0 -3px 0 0 #149ae7;
+    }
+    
+    ::placeholder {
+      color: grey;
+      opacity: 1;
+    }
+    
+    footer {
+      color: white;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    
+    .bfHeading{
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    .bfHeading h1{
+      color: #149ae7;
+    }
+
+    .selectedBreakfast{
+          font-size: 10rem;
+          text-align: center;
+          padding: 70px 0;
+          height: 30rem;
+    }
+
+    /* Nav Bar  */
+
+    /* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+.deleteButton{
+      margin-top:10px;
+      background-color:#149ae7;
+  }
+  
+  .deleteForm{
+      text-align:center;
+  }
+  
+  .form-check{
+      text-align:left;
+      padding: 10px 10px 10px 35px;
+  }
+  
+  .navbar-brand{
+      padding-left: 20px;    
+  }
+  
+  .navbar-toggler{
+      margin-right:20px;
+  }
+  
+  .navbar{
+      background-color:#149ae7;
+        padding: 2rem 0;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+  }

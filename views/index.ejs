@@ -1,0 +1,34 @@
+<%- include("header") -%>
+
+      <div class="box" id="heading">
+      <h1> Choose your favorite <%=foodType%> </h1>
+    </div>
+  
+    <div class="box">
+      <% newListItems.forEach(function(item){%>
+        <form action="/delete" method="POST">
+          <div class="item">
+            <input class="itemCheckbox" type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+            <p><%=  item.name  %></p>
+          </div>
+          <input type="hidden" name="foodType" value="<%= foodType %>"></input>
+          <input type="hidden" name="food" value="<%= item.name %>"></input>
+        </form>
+       <% }) %>
+  
+        <form class="item" action="/" method="post">
+          <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+          <button type="submit" class="btn btn-sm" name="selector" value="add">Add a food</button>
+          <input type="hidden" name="foodType" value="<%= foodType %>"></input>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="randomButton">
+      <form action="/random" method="post">
+            <button class="btn btn-lg selectButton" type="submit" name="foodType" value="<%=foodType%>">Choose a random food</button>
+          </form>
+    </div>
+  
+</body>
+</html>
