@@ -10,6 +10,25 @@
           <div class="item">
             <input class="itemCheckbox" type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
             <p><%=  item.name  %></p>
+            <!-- Three Dot Button -->
+            <!-- <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header"> 
+                  <div class="test" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#" onclick="this.form.submit()">Delete</a>
+                      <button type="submit">your button that looks like a link</button>
+                      < <form id="form1" action="/deleteItem" method="post">
+                        <a class="dropdown-item" href="#" onclick="document.getElementById('form1').submit();">Delete</a>
+                        <input type="hidden" name="foodItem" value="<%= item._id %>"></input>
+                        <input type="hidden" name="foodType" value="<%= foodType %>"></input>
+                        <button type="submit">Submit!</button>
+                      </form> 
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </nav> -->
           </div>
           <input type="hidden" name="foodType" value="<%= foodType %>"></input>
           <input type="hidden" name="food" value="<%= item.name %>"></input>
@@ -17,8 +36,8 @@
        <% }) %>
   
         <form class="item" action="/" method="post">
-          <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-          <button type="submit" class="btn btn-sm" name="selector" value="add">Add a food</button>
+          <input type="text" name="newItem" placeholder="New Item" autocomplete="off" required>
+          <button type="submit" class="btn btn-sm addButton" name="selector" value="add">Add a food</button>
           <input type="hidden" name="foodType" value="<%= foodType %>"></input>
         </form>
     </div>

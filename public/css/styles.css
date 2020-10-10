@@ -1,7 +1,6 @@
 html {
       background-color: #E4E9FD;
-      background-image: -webkit-linear-gradient(65deg, #149ae7 30%, #E4E9FD 70%);
-      min-height: 1000px;
+      /* background-image: -webkit-linear-gradient(65deg, #149ae7 30%, #E4E9FD 70%); */
       font-family: 'helvetica neue';
     }
     
@@ -18,6 +17,7 @@ html {
     
     body{
             background-color : transparent;
+            text-align: center;
       }
     
     .box {
@@ -68,7 +68,7 @@ html {
       margin-left: 20px;
     }
     
-    .btn {
+    .addButton {
       border-color: transparent;
       background-color: #149ae7;
       color: #fff;
@@ -84,6 +84,7 @@ html {
     .selectButton{
       background-color: #0b527a;
       padding: 20px;
+      color: white;
     }
     
     input[type="text"] {
@@ -176,3 +177,34 @@ html {
       width: 100%;
       padding: 3% 15% 7%;
   }
+
+  .loginHeading{
+    color:#149ae7;
+    padding:20px;
+  }
+
+  .card{
+    padding: 3rem;
+    margin: 5rem;
+  }
+
+  /* 3 dots button */
+  .test:after {
+    content: '\2807';
+    font-size: 1rem;
+    color: #2e2e2e;
+    width: 100%;
+    padding-right: 2rem;
+    text-align: right;
+  }
+
+  .test{
+    width: 100%;
+    padding-right: 2rem;
+    text-align: right;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+    margin-left: 2rem;
+}
